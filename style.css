@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Open Sans", serif;
+    color: rgb(128, 128, 128);
+}
+
+body {
+    background-color: rgba(241,245,248,255);
+    margin: 0;
+}
+
+#title {
+    width: 260px;
+    height: 40px;
+    cursor: default;
+}
+
+nav {  
+    background-color: white;
+    height: 100%;
+    width: 350px;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    left: -390px;
+}
+
+#top {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+#x {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: -20%;
+}
+
+img {
+    cursor: pointer;
+    width: 35px;
+}
+
+#x:hover {
+    transform: rotate(360deg);
+    transition: 0.5s;
+}
+
+#bars:hover {
+    filter: brightness(150%);
+    transition: 0.5s;
+}
+
+#icons {
+    margin-top: 300px;
+    margin-left: 80px;
+}
+
+#pages {
+    margin-left: -12px;
+}
+
+.page {
+    margin: 16px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon {
+    margin: 8px;
+}
+
+.icon:hover {
+    filter: brightness(150%);
+    transition: 0.5s;
+}
+
+ul {
+    padding-bottom: 0;
+}
+
+ul .page {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 18px;
+    padding-left: 30px;
+    margin-left: -50px;
+    font-size: larger;
+    width: 344px;
+}
+
+li:hover {
+    background-color: lightblue;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+li:hover .txt_page {
+    color: rgb(0, 180, 255);
+    transform: translateX(10px);
+    transition: 0.5s;
+}
+
+#bars {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    animation: scaling 1s infinite alternate linear;
+}
+
+#black {
+    color: black;
+}
+
+#blue {
+    color: rgb(0, 180, 255);
+}
+
+@keyframes scaling {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
